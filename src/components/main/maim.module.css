@@ -1,49 +1,33 @@
 .heder{
     display: flex;
-}
-.img_left{
-    width: 278px;
-height: 242px;
-margin-bottom: 60px;
+    width: 100%;
+    margin: 20px;
 
 }
-.img_pr{
-    width: 476px;
-height: 416px;
-margin-top: 51px;
-margin-right: 135px;
-}
-.dbr_lf{
-    display: block;
-    /* margin: 135px; */
-    margin-top: 51px;
-    /* margin-left: 135px; */
-    margin-right: 416px;
-   
-}
-.inp_d{
-    padding-left: 780px;
-    padding-right: 135px;
-    display: flex;
-}
-.d_inp{
-    
-}
+
 .div{ 
-    background: #FFFDF5; 
-    padding-left: 135px;
-    padding-right: 135px;
-    width: 1440px;
-/* height: 900px; */
-/* flex-shrink: 0; */
+    display: block;
+    background:#FFFDF5;; 
+padding: 135px;
+width: 100%;
+padding: 134px;
 }
 .dbr_pr{
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    /* float:right;
+    float:none; */
+    float: right;
+    
+    
 }
+.dbr_lf{
+    float: left;
+    
+}
+ 
 .ob_div{
-    display:flex;
-   
+    display:block;
+    /* float: right; */
 }
 .btns button{
     width: 193px;
@@ -51,6 +35,7 @@ margin-right: 135px;
     display:block;
     margin-left: auto;
     margin-right: auto;
+    
     border-radius: 50%;
     background-color:#514A7E ;
     border: #514A7E;
@@ -61,4 +46,12 @@ margin-right: 135px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.btns {
+    
+    padding-top: 700px;
+}
+.ddd{
+    display:block;
+
 }
