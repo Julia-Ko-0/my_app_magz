@@ -51,7 +51,7 @@ function Top(){
                     </div>
                 </div>
                 <div class={a.btns}>
-                    <button>Каталог</button>
+                    <button class={a.btnn}>Каталог</button>
                 </div>
             </div>
            

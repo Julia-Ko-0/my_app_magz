@@ -1,11 +1,8 @@
 .ob_div{
-    padding-left: 5%;
-    padding-right: 5%;
-      max-width:100%;
+      width:100%;
+      background:#FFFDF5;
 }
-img{
-    min-size: 40%;
-}
+
 
 .heder{
     width: 100%;
@@ -25,22 +22,39 @@ img{
 
 
 }
-/* .dbr_pr img{
+.dbr_pr {
+    /* width: 50%; */
+    /* float:right; */
+}
+.dbr_pr img{
+    width:70%;
+    max-height: 600px;
+     float: right;
+}
+.dbr_lf{
+    width: 50%
+}
+.dbr_lf img{
     width: 50%;
-    height: 50%;
+    max-height: 500px;
+}
+/* .dbr_pr{
+
 } */
 .d_inp{
     float: right;
 
-    margin-right: 22%;
+    /* margin-right: 20%; */
 }
 .div{ 
     display: block;
-    background:#FFFDF5;; 
+    
+     /* padding-left: 5%;
+    padding-right: 5%; */
 /* padding: 135px; */
     /* width: 100%; */
-    padding-left: 200px;
-    padding-right: 200px;
+    /* padding-left: 200px;
+    padding-right: 200px; */
     /* margin: 135px; */
     /* max-width:100%; */
 }
@@ -48,30 +62,29 @@ img{
     .div{
         padding-left: 10%;
         padding-right: 10%;
+
     }
+
+    .btns {
     
+    padding-top: 5%;
+}
     
 }
 
 
 .dbr_pr{
     display: flex;
-    /* float:right;
-    float:none; */
-    float: right;
-   
-    
-    
 }
 .dbr_lf{
-    float: left;
-    
+    float: left;    
     
 }
  
 .ob_div{
     display:block;
-    /* float: right; */
+    width: 100%;
+    float: right;
 }
 .btns button{
     width: 193px;
@@ -92,7 +105,7 @@ img{
 }
 .btns {
     
-    padding-top: 570px;
+    /* padding-top: 570px; */
 }
 .btns button:hover{
     
@@ -104,4 +117,14 @@ img{
 .ddd{
     display:block;
 
+}
+.img_left{
+    float: right;
+    padding-left:30% ;
+}
+.div_text{
+    display: block;
+}
+.text{
+    display: flex;
 }
