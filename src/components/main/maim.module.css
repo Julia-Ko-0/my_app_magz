@@ -128,3 +128,12 @@
 .text{
     display: flex;
 }
+
+.krug1{
+    display: flex;
+    width: 28px; 
+    height: 28px;
+    background: #514A7E;
+    border-radius: 50%;
+     color: #514A7E;
+}
