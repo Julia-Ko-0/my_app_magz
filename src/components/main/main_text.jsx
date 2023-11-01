@@ -4,11 +4,12 @@ function Text(){
         <div class={a.div_text}>
             <h1>Почему выбирают нас</h1>
             <div class ={a.text}>
-                <div>
+                <div class={a.text1}>
                     <h2>скидки постоянным клиентам от 5%
                     </h2>
-                    <div class={a.krug1}></div>
-                </div>
+
+                    <img class={a.im_kr1} src="./imgs/Ellipse 4.svg" alt="" />
+                    </div>
                 <div>
                     <h2>Предлагаем самые выгодные цены</h2>
                 </div>

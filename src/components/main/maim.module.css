@@ -128,12 +128,27 @@
 .text{
     display: flex;
 }
-
-.krug1{
+.im_kr1{
+    /* display:flex;
+    position: relative;
+    top: -40%;
+    left: 65%; */
+    paddin:-30%;
+    padding-left: 65%;
+    /* padding:50%; */
+}
+/* .krug1{
     display: flex;
+    float: right;
     width: 28px; 
     height: 28px;
     background: #514A7E;
     border-radius: 50%;
      color: #514A7E;
+    
+} */
+.text1 h2{
+    /* position: relative; */
+    /* float: left;
+    padding-right:10% ; */
 }
