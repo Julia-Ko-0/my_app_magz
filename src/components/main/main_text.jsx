@@ -16,11 +16,13 @@ function Text(){
                 </div>
                 <div  class={a.text_vs}>
                     <h2>Наши покупатели всегда остаются довольны</h2>
+                    <img class={a.im_kr2} src="./imgs/Ellipse 6.png" alt="" />
                     <div></div>
                 </div>
                 <div class={a.text_vs}>
                     <h2>Ширикий ассортимент товаров для всей семьи</h2>
                 </div>
+                <div class={a.cr1}> <img class={a.cr1} src="./imgs/Ellipse 2.png" alt="" /></div>
                    
             </div>
         </div>

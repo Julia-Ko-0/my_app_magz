@@ -39,9 +39,12 @@ function Top(){
                         </div>
                         <div class={a.t_dobr_poz}>
                             <div class={a.t}><h1>Добро пожаловать </h1><h1 class={a.coctel}>в Cocteil</h1></div>
+                            <div class={a.t1}>
                             <h2>Экономим Ваше время! </h2>
                             <h2>Предлагаем лучшие цены! </h2>
                             <h2>Доставляем в кратчайшие сроки!</h2>
+                            </div>
+                           
                         </div>
 
                     </div>
