@@ -69,3 +69,22 @@ line-height: normal;
     grid-template-columns: repeat(4, 4fr);
     grid-template-rows: repeat(10, 1fr);
 }
+.img_akk{
+    max-width: 30%;
+    min-height: 2%;
+     padding-right: 10%;
+}
+.akk_otzv{
+    display: flex;
+    background-color: #d3cccc;
+    width: 50%;
+    margin-right: 5% ;
+    padding: 5%;
+}
+.otz{
+    display: flex;
+}
+.akk_otzv_inf{
+    height: 10%;
+    /* padding-left: 10%; */
+}

@@ -52,9 +52,22 @@ function CrCard(){
                 <h1>длваопдокалокрплрв длваопмоав лдчаомдв ыпомдвыпо вджплмо</h1>
                 </div>
                 </selection>
-
-                <section>
-
+                <h1>Отзывы о товаре</h1>
+                <section class={a.otz}>
+                    <div class={a.akk_otzv}>
+                    <img  class={a.img_akk} width='573' src="./imgs/Ellipse 8.png" alt="" />
+                    <div class={a.akk_otzv_inf}>
+                        <h1>Кристина Василюк</h1>
+                        <h2>djkhndlk y dhgfd fg xxjfgrs jksdfghkj ksjghk </h2>
+                        </div>
+                    </div>
+                    <div class={a.akk_otzv}>
+                    <img  class={a.img_akk} width='573' src="./imgs/Ellipse 8.png" alt="" />
+                        <div class={a.akk_otzv_inf}>
+                            <h1>Анна Котлова</h1>
+                            <h2>djkhndlk y dhgfd fg xxjfgrs jksdfghkj ksjghk </h2>
+                        </div>
+                    </div>
                 </section>
              
         </div>
