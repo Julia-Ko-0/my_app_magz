@@ -1,0 +1,28 @@
+.heder{
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+
+}
+.svg_{
+    width: 5%;
+}
+.inpt:valid:focus{
+    border-top: none;
+    /* background-color: #514A7E; */
+
+}
+.inpt{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 70%;
+    height: 20px;
+}
+.inp_d{
+    display: flex;
+    float: right;
+    padding-right: 15%;
+    width: 20%;
+}
+

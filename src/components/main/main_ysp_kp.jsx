@@ -9,7 +9,7 @@ function Ys_kyp(){
             <h1>Успейте купить!</h1>
             <h1>Акции</h1>
         </div>
-        <div class={a.tovr}>
+        <section class={a.tovr}>
             {
               Mas.map(m=>(
                 <Pr_ys_kk skl={m.imgs} price={m.price} pr_price={m.pr_price}
@@ -17,7 +17,7 @@ function Ys_kyp(){
                 ocenk={m.ocenk}/>
               ))
             }
-        </div>
+        </section>
     </div>
     )
 }

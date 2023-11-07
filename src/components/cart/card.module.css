@@ -1,0 +1,16 @@
+.bnt_nazad{
+    display:flow-root;
+    width: 43px;
+    height: 43px;
+    border-radius: 100%;
+    color: #FFFDF5;
+    background-color: #514A7E;
+}
+.bnt_nazad:hover{
+    background-color:#FFFDF5;
+    .strelk{
+        fill:#514A7E
+    }
+}
+.strelk{
+}

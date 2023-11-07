@@ -26,19 +26,26 @@ function Text(){
                    
             </div>
             <div  class ={a.text1}>
-                    <div class={a.text1_1}>
-                        <div class={a.d_kr}>
+                <div class={a.text1_1}>
+                    <div class={a.d_kr}>
                         <img class={a.im_kr3} src="./imgs/наверх.svg" alt="" />
-                        </div>
+                    </div>
                     
+                     
                     <div class={a.text_vs}><h2 >Возможность доставки в любой город cтраны</h2>
-                    <img class={a.im_kr4} src="./imgs/Ellipse 4.svg" alt="" />
+                        <img class={a.im_kr4} src="./imgs/Ellipse 4.svg" alt="" />
                     </div>
+
+                   
+                    <div >
+                        <div class={a.text_vs}><h2 class={a.tvs2}>Пункты выдачи заказов рядом с домом</h2></div>
+                       
                     </div>
-                <div className={a.text1_1}>
-                <div class={a.text_vs}><h2 class={a.tvs2}>Пункты выдачи заказов рядом с домом</h2></div>
-                    <div class={a.d_kr}><img class={a.im_kr3} src="./imgs/Group 82.png" alt="dzvad" /></div>
+                    <div class={a.d_kr}>
+                        <img class={a.im_kr3} src="./imgs/Group 82.svg" alt="" />
+                    </div>
                 </div>
+                
                     
             </div>
         </div>
