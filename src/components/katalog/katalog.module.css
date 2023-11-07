@@ -1,0 +1,26 @@
+.div{
+    display: block;
+}
+.btn_sort{
+    border: none;
+    background-color: #FFFDF5;
+}
+.btn_sort:active{
+    /* background-color:blue; */
+}
+.sort{
+    display: flex;
+}
+.tov_vs{
+    display: flex;
+}
+.filtr{
+    width: 15%;
+}
+.tovars{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+}
