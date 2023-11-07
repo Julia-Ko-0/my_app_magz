@@ -1,8 +1,8 @@
 import a from './card.module.css' 
 function CrCard(){
     return(
-        <div>
-             <selection>
+        <div class={a.div}>
+             <selection class={a.otdel}>
                 <button class={a.bnt_nazad}>
                 <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
 
@@ -13,14 +13,18 @@ function CrCard(){
 
                
              </selection>
-             <selection>
-                <h3>блцзка женская</h3>
+             <selection class={a.otdel_2}>
+                <h1>Блузка женская </h1>
                 <h2> art 9021848</h2>
              </selection>
-             <selection>
-                    <div>
-                    <img  src="./imgs/Rectangle 52 (1).png" alt="" />
-                    <button><path d="M66.3536 24.3536C66.5488 24.1583 66.5488 23.8417 66.3536 23.6464L63.1716 20.4645C62.9763 20.2692 62.6597 20.2692 62.4645 20.4645C62.2692 20.6597 62.2692 20.9763 62.4645 21.1716L65.2929 24L62.4645 26.8284C62.2692 27.0237 62.2692 27.3403 62.4645 27.5355C62.6597 27.7308 62.9763 27.7308 63.1716 27.5355L66.3536 24.3536ZM20 24.5H66V23.5H20V24.5Z" fill="#514A7E"/>
+             <selection class={a.tovar}>
+                    <div class={a.img_tovar}>
+                    <img  class={a.btn_sl_img} width='573' src="./imgs/Rectangle 52 (1).png" alt="" />
+                    <button class={a.btn_img} >
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 85 47" fill="none">
+  <rect  fill="#FFFDF5"/>
+  <path d="M66.3536 24.3536C66.5488 24.1583 66.5488 23.8417 66.3536 23.6464L63.1716 20.4645C62.9763 20.2692 62.6597 20.2692 62.4645 20.4645C62.2692 20.6597 62.2692 20.9763 62.4645 21.1716L65.2929 24L62.4645 26.8284C62.2692 27.0237 62.2692 27.3403 62.4645 27.5355C62.6597 27.7308 62.9763 27.7308 63.1716 27.5355L66.3536 24.3536ZM20 24.5H66V23.5H20V24.5Z" fill="#514A7E"/>
+</svg>
                         </button>
                     </div>
                 <div>
@@ -37,9 +41,7 @@ function CrCard(){
                     </div>
                     <a>Тфблица размеров</a>
                     <div>
-                    <button>
-
-                    </button>
+                    <button>В корзину</button>
                     </div>
                 <div></div>
                 <div>
