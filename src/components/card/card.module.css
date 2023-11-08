@@ -3,3 +3,22 @@ display: flex;
 
 }
 .dan{display: flex;}
+.btn_verh{
+    border-radius: 50%;
+    width: 72px;
+height: 72px;
+background-color:#514A7E ;
+}
+.bnt_nazad{
+    width: 43px;
+height: 43px;
+    border-radius: 100%;
+}
+.korz{
+    display: grid;
+    grid-template-columns: repeat(3, 15%);
+}
+.card_icnKoll{
+    display: grid;
+    grid-template-columns: repeat(2, 35%);
+}

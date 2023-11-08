@@ -12,8 +12,8 @@ function App() {
       <div class='div'>
         <CrHeder/>
       {/* <CrMain/> */}
-        {/* <CrCard/> */}
-        <CrKatalog slk="Главная/Женщинам/Блузки и рубашки "/>
+        <CrCard/>
+        {/* <CrKatalog slk="Главная/Женщинам/Блузки и рубашки "/> */}
       </div>
       
     </div>
