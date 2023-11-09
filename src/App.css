@@ -1,14 +1,11 @@
 .div{ 
     display: block;
     background:#FFFDF5;
-    
-}
-.div{
     padding-left: 10%;
     padding-right: 10%;
-    /* width: 100%; */
-
+    
 }
+
 .div h1{
     font-weight: normal;
    
@@ -16,8 +13,7 @@
    .div h2{
     font-weight:10;
      color:#7D7D7D;
-     /* font-size: 95%; */
-     /* line-height:50%; */
+
 
       }
     .t1{

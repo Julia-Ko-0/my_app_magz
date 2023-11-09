@@ -2,7 +2,7 @@ import a from './maim.module.css'
 function Text(){
     return(
         <div class={a.div}>
-            <h1>Почему выбирают нас</h1>
+            <h1 >Почему выбирают нас</h1>
             <div class ={a.text}>
                 <div class={a.text_vs}>
                     <div class={a.ttt}>
@@ -28,7 +28,9 @@ function Text(){
             <div  class ={a.text1}>
                 <div class={a.text1_1}>
                     <div class={a.d_kr}>
-                        <img class={a.im_kr3} src="./imgs/наверх.svg" alt="" />
+                 
+                    <a href='#heder'> <img class={a.im_kr3} src="./imgs/наверх.png" alt="" /> </a>
+                       
                     </div>
                     
                      
@@ -42,7 +44,10 @@ function Text(){
                        
                     </div>
                     <div class={a.d_kr}>
-                        <img class={a.im_kr3} src="./imgs/Group 82.svg" alt="" />
+                       
+                        <img class={a.im_kr3}  src="./imgs/Group 82.png " alt="" />
+                       
+                        
                     </div>
                 </div>
                 

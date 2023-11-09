@@ -1,7 +1,12 @@
 import a from './card.module.css'
+import { useState } from "react"
 
 import { MasCard } from './cardMas'
+// let Mas= MasCard
 function CrCard(){
+    // const [Mas, setShapes] = useState(
+    //     MasCard
+    // )
     return(
         <div class={a.div}>
             <div class={a.korz}>
@@ -28,7 +33,7 @@ function CrCard(){
               MasCard.map(m=>(
                 <CrElCard id={m.polz} skl={m.img} price={m.price} size={m.size}
                 color={m.color}
-                name={m.name} kolv={m.kolv} art={m.articul}/>
+                name={m.name} kolv={m.kolv} articul={m.articul}/>
               ))
             }
             <button>Заказать </button>
@@ -42,26 +47,72 @@ function CrCard(){
         </div>
     )
 }
+
 function CrElCard(props){
-if(props.id == 1){
+    const [shapes, setShapes] = useState(
+        MasCard
+    )
+    if(props.id == 1){
+    function DobElem(){
+       
+        console.log(props.articul)
+        console.log(shapes)
+         shapes.map(elem=>{
+            if(elem.articul == props.articul && elem.size == props.size){
+               elem.kolv++
+               let kolich = document.getElementById(props.articul+props.size)
+               kolich.innerHTML++
+            }
+        }) 
+        // console.log(MasCard)
+        setShapes(shapes)
+        
+       
+      
+    }
+    function DelElem(){
+        
+        console.log(props.articul)
+        console.log(shapes)
+        for(let i=0;i<shapes.length;i++){
+            if(shapes[i].articul == props.articul && shapes[i].size == props.size){
+                shapes[i].kolv--
+                if(shapes[i].kolv==0){
+                    shapes.splice(i,1)
+                    let kolich = document.getElementById(props.articul)
+                    kolich.innerHTML=''
+                }
+                else{
+                    let kolich = document.getElementById(props.articul+props.size)
+                    kolich.innerHTML--
+                }
+               
+             }
+
+        }
+            
+       
+        
+      
+    }
     return(
-        <section class={a.ElTov}>
+        <section id={props.articul} class={a.ElTov}>
             <img class={a.img} src={props.skl} alt="" />
             <div class={a.inf}> 
             <div>
                 <h1>{props.name}</h1>
-                <h2>{props.atr}</h2>
+                <h2>{props.articul}</h2>
             </div>
             <div class={a.dan}>
                 <h2>{props.color}</h2>
                 <h2>{props.size}</h2>
             </div>
             <div class={a.dan}>
-                <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <button  onClick={DelElem}><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                 <path d="M14.4444 9.44434H5.55556C5.40821 9.44434 5.26691 9.50287 5.16272 9.60705C5.05853 9.71124 5 9.85255 5 9.99989C5 10.1472 5.05853 10.2885 5.16272 10.3927C5.26691 10.4969 5.40821 10.5554 5.55556 10.5554H14.4444C14.5918 10.5554 14.7331 10.4969 14.8373 10.3927C14.9415 10.2885 15 10.1472 15 9.99989C15 9.85255 14.9415 9.71124 14.8373 9.60705C14.7331 9.50287 14.5918 9.44434 14.4444 9.44434Z" fill="#514A7E"/>
                 </svg></button>
-                <h1>{props.kolv}</h1>
-                <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <h1 id={props.articul+props.size}>{props.kolv}</h1>
+                <button onClick={DobElem}><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                 <path d="M16.6666 9.4445H10.5555V3.33339C10.5555 3.18605 10.497 3.04474 10.3928 2.94055C10.2886 2.83636 10.1473 2.77783 9.99993 2.77783C9.85259 2.77783 9.71128 2.83636 9.60709 2.94055C9.50291 3.04474 9.44437 3.18605 9.44437 3.33339V9.4445H3.33326C3.18592 9.4445 3.04461 9.50303 2.94043 9.60722C2.83624 9.7114 2.77771 9.85271 2.77771 10.0001C2.77497 10.0723 2.78773 10.1442 2.81515 10.2111C2.84257 10.2779 2.88399 10.3381 2.93664 10.3876C2.98929 10.4371 3.05193 10.4747 3.12035 10.4979C3.18877 10.5212 3.26137 10.5295 3.33326 10.5223H9.44437V16.6667C9.44437 16.8141 9.50291 16.9554 9.60709 17.0596C9.71128 17.1637 9.85259 17.2223 9.99993 17.2223C10.1473 17.2223 10.2886 17.1637 10.3928 17.0596C10.497 16.9554 10.5555 16.8141 10.5555 16.6667V10.5556H16.6666C16.8139 10.5556 16.9552 10.4971 17.0594 10.3929C17.1636 10.2887 17.2222 10.1474 17.2222 10.0001C17.2222 9.85271 17.1636 9.7114 17.0594 9.60722C16.9552 9.50303 16.8139 9.4445 16.6666 9.4445Z" fill="#514A7E"/>
                 </svg></button>
             </div>
@@ -78,7 +129,7 @@ if(props.id == 1){
                 <path d="M11.667 7.22217H12.7781V15.5555H11.667V7.22217Z" fill="#121212"/>
                 <path d="M7.22266 7.22217H8.33377V15.5555H7.22266V7.22217Z" fill="#121212"/>
                   <path d="M12.7782 3.25577H11.7227V2.22244H8.27821V3.25577H7.22266V2.22244C7.2223 1.93713 7.33171 1.66262 7.52821 1.45577C7.72472 1.24892 7.99326 1.12559 8.27821 1.11133H11.7227C12.0076 1.12559 12.2762 1.24892 12.4727 1.45577C12.6692 1.66262 12.7786 1.93713 12.7782 2.22244V3.25577Z" fill="#121212"/>
-                 </svg> В корзину
+                 </svg> Удалить
                 </button>
             </div>
            
@@ -93,6 +144,6 @@ if(props.id == 1){
         </section>
     )
 }
-    
-}
+} 
+
 export{CrCard}
