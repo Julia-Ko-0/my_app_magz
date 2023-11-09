@@ -8,18 +8,21 @@ import { CrKatalog } from './components/katalog/ocn_katal.jsx';
 import { CrExt } from './components/exet/ext.jsx';
 import { CrRegistr } from './components/exet/registr.jsx';
 import { CrKat_ } from './components/katalog/katalog.jsx';
+import { CrTovar } from './components/katalog/tovar.jsx';
 function App() {
+  
   return (
     <BrowserRouter>
     <div class="App">
         <div class='div'>
           <CrHeder/>
           {/* <CrMain/> */}
-         
+         {/* <CrTovar/> */}
           <Routes>
             <Route path='/' element={<CrMain/>}/>
-            <Route path='Каталог' element={<CrKatalog slk="Главная/Каталог/"/>}/>
+            <Route path='/Каталог' element={<CrKatalog slk="Главная/Каталог/"/>}/>
             <Route path='/Корзина' element={<CrCard/>}/>
+            <Route path='/Товар' element={<CrTovar name={location.state.name}/>}/>
           </Routes>
             {/* <CrExt/> */}
             {/* <CrRegistr/> */}
