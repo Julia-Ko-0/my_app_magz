@@ -1,11 +1,11 @@
 import a from './tovar.module.css' 
-function CrTovar(){
+function CrTovar(props){
     return(
         <div class={a.div}>
              
              <selection class={a.otdel_2}>
-                <h1>Блузка женская </h1>
-                <h2> art 9021848</h2>
+                <h1>{props.name}</h1>
+                <h2> art{props.art}</h2>
              </selection>
              <selection class={a.tovar}>
                     <div class={a.img_tovar}>
@@ -18,8 +18,8 @@ function CrTovar(){
                         </button>
                     </div>
                 <div>
-                    <h3>50 rub</h3>
-                    <h2>color</h2>
+                    <h3>{props.price}</h3>
+                    <h2>{props.color}</h2>
 
                     <h2>Razmer</h2>
                     <div>

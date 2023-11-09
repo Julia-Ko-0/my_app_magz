@@ -1,4 +1,5 @@
 import a from './maim.module.css'
+import { NavLink } from "react-router-dom"
 function Top(){
     return(
 
@@ -26,7 +27,9 @@ function Top(){
                     </div>
                 </div>
                 <div class={a.btns}>
+                <NavLink to='Каталог' >
                     <button class={a.btnn}><h3 class={a.hhh}>Каталог</h3></button>
+                    </NavLink>
                 </div>
             </div>
            

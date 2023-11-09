@@ -7,6 +7,7 @@ import { CrCard } from './components/card/card.jsx';
 import { CrKatalog } from './components/katalog/ocn_katal.jsx';
 import { CrExt } from './components/exet/ext.jsx';
 import { CrRegistr } from './components/exet/registr.jsx';
+import { CrKat_ } from './components/katalog/katalog.jsx';
 function App() {
   return (
     <BrowserRouter>
@@ -14,8 +15,10 @@ function App() {
         <div class='div'>
           <CrHeder/>
           {/* <CrMain/> */}
+         
           <Routes>
             <Route path='/' element={<CrMain/>}/>
+            <Route path='Каталог' element={<CrKatalog slk="Главная/Каталог/"/>}/>
             <Route path='/Корзина' element={<CrCard/>}/>
           </Routes>
             {/* <CrExt/> */}
