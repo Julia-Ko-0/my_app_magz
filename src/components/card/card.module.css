@@ -2,7 +2,33 @@
 display: flex;
 
 }
-.dan{display: flex;}
+.img{
+    width: 300px;
+    height: 300px;
+}
+.btns{
+display: grid;
+grid-template-columns: 2fr 2fr;
+gap: 10%;
+
+}
+.btns button{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10%;
+    
+    }
+.ElTov button{
+    border: none;
+    background-color: #FFFDF5;
+    margin: 10%;
+}
+.dan{display: flex;
+    height: 20%;
+}
+.dan h1{
+   line-height: 2;
+}
 .btn_verh{
     border-radius: 50%;
     width: 72px;
@@ -13,6 +39,14 @@ background-color:#514A7E ;
     width: 43px;
 height: 43px;
     border-radius: 100%;
+    background-color: #514A7E;
+}
+.bnt_nazad:hover{
+   
+    background-color:#FFFDF5;
+    .strelk{
+        fill:#514A7E;
+    }
 }
 .korz{
     display: grid;
