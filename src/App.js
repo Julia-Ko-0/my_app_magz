@@ -25,7 +25,7 @@ function App() {
           {/* <CrMain/> */}
          {/* <CrTovar/> */}
           <Routes>
-            <Route path='/' element={<CrMain/>}/>
+            <Route path='/*' element={<CrMain/>}/>
             <Route path='/Каталог' element={<CrKatalog slk="Главная/Каталог/"/>}/>
             <Route path='/Корзина' element={<CrCard/>}/>
             <Route path='/Каталог/Товар/*' element={<CrTovar/>}/>

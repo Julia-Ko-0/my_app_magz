@@ -29,6 +29,10 @@
     grid-row-end: 11;
 
 }
+.btn_nazad{
+    border-radius: 50%;
+    width: 52px;
+}
 .btn_img{
 
     width: 55%;
