@@ -80,12 +80,6 @@ function CrHeder(){
                         SetCount(MMM)
                         console.log(MMM)
                         
-                        // MMM.map(m=>(
-                        //     <CrNewMas hrf={'/Каталог/Товар/?glOt=Женщинам&ot=Платья&page='+m.articul} gl_otd = {m.gl_otd} skl={m.imgs} price={m.price} pr_price={m.pr_price}
-                        //     otdel={m.otdel}
-                        //     ocenk={m.ocenk}
-                        //     name={m.name}/>
-                        //   ))
                     }
     
     return(
