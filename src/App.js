@@ -7,7 +7,6 @@ import { CrCard } from './components/card/card.jsx';
 import { CrKatalog } from './components/katalog/ocn_katal.jsx';
 import { CrExt } from './components/exet/ext.jsx';
 import { CrRegistr } from './components/exet/registr.jsx';
-import { CrKat_ } from './components/katalog/katalog.jsx';
 import { CrTovar } from './components/katalog/tovar.jsx';
 import { CrPoiskKatal } from './components/poisk_katal/poisk_katal.jsx';
 function App() {
@@ -25,8 +24,12 @@ function App() {
           <CrHeder/>
           {/* <CrMain/> */}
          {/* <CrTovar/> */}
+         
         
           <Routes>
+          <Route path='/' element={<CrRegistr/>}/>
+          <Route path='/Вход' element={<CrExt/>}/>
+          {/* <Route path='/Главная/*' element={<CrHeder/>}/> */}
             <Route path='/Главная' element={<CrMain/>}/>
             <Route path='/Каталог/*' element={<CrKatalog slk="Главная/Каталог/"/>}/>
             <Route path='/Корзина' element={<CrCard/>}/>

@@ -4,18 +4,31 @@ import { MasCard } from '../card/cardMas.jsx'
 import a from './tovar.module.css' 
 import React from 'react'
 
-function DobVCarz(){
+function DobVCarz(el1,el2,el3,el4,el5,el6,el7){
+    console.timeLog(el1)
+    MasCard.push({
+        polz:1,
+        img:el2,
+        name:el3,
+        articul:el4,
+        color:el5,
+        size:el6,
+        kolv:el7,
+        price:el1
+    })
     
 }
 function CrTovar(){
   let url = new URLSearchParams(window.location.search).get("page")
+  let url1 = new URLSearchParams(window.location.search).get("ot")
+  let url2 = new URLSearchParams(window.location.search).get("glOt")
     console.log(url)
     for(let i = 0;i<Mas.length;i++){
         if(url == Mas[i].articul){
             console.log(Mas[i].otzovs[1].name)
             return(
                 <div class={a.div}>
-                    <NavLink to='/Каталог'>
+                    <NavLink to={'/Каталог/?glOt='+url2+'&ot='+url1}>
                     <button class={a.btn_nazad}><svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
 
 <path d="M12.6464 21.6464C12.4512 21.8417 12.4512 22.1583 12.6464 22.3536L15.8284 25.5355C16.0237 25.7308 16.3403 25.7308 16.5355 25.5355C16.7308 25.3403 16.7308 25.0237 16.5355 24.8284L13.7071 22L16.5355 19.1716C16.7308 18.9763 16.7308 18.6597 16.5355 18.4645C16.3403 18.2692 16.0237 18.2692 15.8284 18.4645L12.6464 21.6464ZM30 21.5L13 21.5L13 22.5L30 22.5L30 21.5Z" fill="#FFFDF5"/>
@@ -40,16 +53,25 @@ function CrTovar(){
                             <h2>{Mas[i].color}</h2>
         
                             <h2>Razmer</h2>
-                            <div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                            <div class={a.ceck}>
+                            <input id='radio-1' class={a.cek} type="radio" name="raz"/> 
+                            <label for="radio-1">S 42</label>
+
+                            <input id='radio-2' class={a.cek} type="radio" name="raz"/> 
+                            <label for="radio-2">M 44</label>
+
+                            <input id='radio-3' class={a.cek} type="radio" name="raz"/>
+                            <label for="radio-3">L 45</label>
+
+                            <input id='radio-4' class={a.cek} type="radio" name="raz"/>
+                            <label for="radio-4">XL 46</label>
+
                             </div>
-                            <a>Тфблица размеров</a>
+                            <a>Тaблица размеров</a>
                             <div>
-                            <button onClick={DobVCarz}>В корзину</button>
+                            <button onClick={()=>{
+                                DobVCarz(Mas[i].price,Mas[i].imgs,Mas[i].name,Mas[i].articul,Mas[i].color,0,1)
+                            }}>В корзину</button>
                             </div>
                         <div></div>
                         <div>

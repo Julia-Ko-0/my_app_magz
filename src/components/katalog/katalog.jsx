@@ -30,7 +30,7 @@ function CrKat_(props){
           <selection class={a.tovars}>
             {
               Mas.map(m=>(
-                <Pr_ys_kk hrf={'Товар/?page='+m.articul} gl_otd = {m.gl_otd}pr={props.src}skl={m.imgs} price={m.price} pr_price={m.pr_price}
+                <Pr_ys_kk hrf={'/Каталог/Товар/?glOt=Женщинам&ot=Платья&page='+m.articul} gl_otd = {m.gl_otd}pr={props.src}skl={m.imgs} price={m.price} pr_price={m.pr_price}
                 otdel={m.otdel}
                 ocenk={m.ocenk}/>
               ))

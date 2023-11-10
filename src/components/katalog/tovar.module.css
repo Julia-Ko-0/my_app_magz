@@ -12,8 +12,25 @@
         fill:#514A7E
     }
 }
-.strelk{
+
+.cek{
+    width: 10px;
 }
+.ceck input[type=radio] {
+	display: none;
+
+}
+.ceck input[type=radio]:checked + label {
+	background:#514A7E;
+}
+.ceck label {
+	display: inline-block;
+	cursor: pointer;
+	padding: 2px 10px;
+	line-height: 34px;
+	border: 1px solid #999;
+	margin: 5px;
+	user-select: none;}
 .div{
     display: block;
 }

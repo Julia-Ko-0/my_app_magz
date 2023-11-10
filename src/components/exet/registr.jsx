@@ -1,5 +1,23 @@
- import a from './reg.module.css'
+ import { Link, NavLink } from 'react-router-dom'
+ import { useState } from "react"
+import a from './reg.module.css'
+import { render } from '@testing-library/react'
+let polz=[]
  function CrRegistr(){
+    const [inp1Value,setInp]=useState('')
+    const [inp2Value,setInp2]=useState('')
+    const [inp3Value,setInp3]=useState('')
+    const [inp4Value,setInp4]=useState('')
+    const [inp5Value,setInp5]=useState('')
+    const [inp6Value,setInp6]=useState('')
+    const [link,setL]=useState('/')
+    function SaveUser(i1,i2,i3,i4,i5,i6){
+       
+        polz.push ({ФИО:i1,pas:i3,tel:i2,adr:i4,elpoch:i5,coment:i6})
+    localStorage.setItem("user", JSON.stringify(polz))
+        
+    }
+ 
     return(
 <div class={a.div}>
     <div class={a.hed}>
@@ -11,24 +29,38 @@
       
        <div class={a.inps}>
             <div class={a.inp1}>
-                <input placeholder='ФИО'>
+                <input type="text" value={inp1Value} onChange={e=>setInp(e.target.value)} placeholder='ФИО'>
                 </input>
-                <input placeholder='Контактный телефон'></input>
-                <input placeholder='Индекс '></input>
+                <input type="text" value={inp2Value} onChange={e=>setInp2(e.target.value)} placeholder='Контактный телефон'></input>
+                <input type="text" value={inp3Value} onChange={e=>setInp3(e.target.value)} placeholder='Пороль'></input>
             </div>
             <div class={a.inp1}>
-                <input placeholder='Полный адрес'></input>
-                <input placeholder='Электронная почта'></input>
-                <input placeholder='Коментарий'></input>
+                <input type="text" value={inp4Value} onChange={e=>setInp4(e.target.value)}placeholder='Полный адрес'></input>
+                <input type="text" value={inp5Value} onChange={e=>setInp5(e.target.value)} placeholder='Электронная почта'></input>
+                <input type="text" value={inp6Value} onChange={e=>setInp6(e.target.value)} placeholder='Коментарий'></input>
             </div>
         <div>
-            <button class={a.btn_otpr}>Отправить<svg xmlns="http://www.w3.org/2000/svg" width="26" height="4" viewBox="0 0 26 4" fill="none">
+        <NavLink to={link}>
+            <button onClick={()=>{
+                
+                console.log(inp1Value!="" && inp2Value!=="" && inp3Value!=="" && inp4Value!=="" && inp5Value!=="" && inp6Value!=='')
+                if(inp1Value!=""&&inp2Value!==""&&inp3Value!==""&&inp4Value!==""&&inp5Value!==""&&inp6Value){
+                    {SaveUser(inp1Value,inp2Value,inp3Value,inp4Value,inp5Value,inp6Value)}
+                    setL('/Главная')
+                    console.log(link)
+                }
+                else{
+                    alert("Заполните все поля!")
+                }
+                
+            }} class={a.btn_otpr}>Отправить<svg xmlns="http://www.w3.org/2000/svg" width="26" height="4" viewBox="0 0 26 4" fill="none">
 <path d="M25.1768 2.17678C25.2744 2.07915 25.2744 1.92085 25.1768 1.82322L23.5858 0.232233C23.4882 0.134602 23.3299 0.134602 23.2322 0.232233C23.1346 0.329864 23.1346 0.488155 23.2322 0.585786L24.6464 2L23.2322 3.41421C23.1346 3.51184 23.1346 3.67014 23.2322 3.76777C23.3299 3.8654 23.4882 3.8654 23.5858 3.76777L25.1768 2.17678ZM0 2.25H25V1.75H0V2.25Z" fill="#FFFDF5"/>
-</svg></button>
-            <button class={a.btn_vhod}>Войти в кабинет</button>
+</svg></button></NavLink>
+<NavLink to='/Вход'>
+            <button class={a.btn_vhod}>Войти в кабинет</button></NavLink>
         </div>
        </div>
 </div>
     )
  }
- export{CrRegistr}
+ export{CrRegistr,polz}
