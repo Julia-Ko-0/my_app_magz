@@ -1,7 +1,12 @@
 import { NavLink, matchPath } from 'react-router-dom'
 import {Mas} from './mas.jsx'
+import { MasCard } from '../card/cardMas.jsx'
 import a from './tovar.module.css' 
 import React from 'react'
+
+function DobVCarz(){
+    
+}
 function CrTovar(){
   let url = new URLSearchParams(window.location.search).get("page")
     console.log(url)
@@ -44,7 +49,7 @@ function CrTovar(){
                             </div>
                             <a>Тфблица размеров</a>
                             <div>
-                            <button>В корзину</button>
+                            <button onClick={DobVCarz}>В корзину</button>
                             </div>
                         <div></div>
                         <div>

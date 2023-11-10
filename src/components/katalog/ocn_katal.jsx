@@ -9,7 +9,7 @@ function CrKatalog(props){
     return(
         <div class={a.div}>
             <selection class={a.otdel}>
-                <NavLink to='/Главная'>
+                <NavLink to='/Поиск'>
                 <button class={a.bnt_nazad}>
                 <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
 

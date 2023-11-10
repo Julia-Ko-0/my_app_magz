@@ -4,7 +4,9 @@ import a from './ocn.module.css'
 import { CrTovar } from './tovar'
 function Pr_ys_kk(props){
     let url = new URLSearchParams(window.location.search).get("ot")
-    if(props.otdel == url){
+    let url2 = new URLSearchParams(window.location.search).get("glOt")
+    // console.log(props.otdel, url , props.gl_otd ,url2)
+    if(props.otdel == url & props.gl_otd == url2){
         let b= []
     for(let i = 0;i<props.ocenk;i++){
         b.push(Cr_zv())
