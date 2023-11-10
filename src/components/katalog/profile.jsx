@@ -3,7 +3,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import a from './ocn.module.css'
 import { CrTovar } from './tovar'
 function Pr_ys_kk(props){
-    let b= []
+    let url = new URLSearchParams(window.location.search).get("ot")
+    if(props.otdel == url){
+        let b= []
     for(let i = 0;i<props.ocenk;i++){
         b.push(Cr_zv())
     }
@@ -58,5 +60,7 @@ return( <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http:
 </svg>)
 
 
+    }
+    
 }
 export{Pr_ys_kk}
