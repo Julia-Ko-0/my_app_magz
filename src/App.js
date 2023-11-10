@@ -12,6 +12,12 @@ import { CrTovar } from './components/katalog/tovar.jsx';
 function App() {
   
   return (
+    //  <div class="App">
+    //     <div class='div'>
+    //     <CrHeder/>
+    //       <div/>
+    //       <div/>
+
     <BrowserRouter>
     <div class="App">
         <div class='div'>
@@ -22,7 +28,7 @@ function App() {
             <Route path='/' element={<CrMain/>}/>
             <Route path='/Каталог' element={<CrKatalog slk="Главная/Каталог/"/>}/>
             <Route path='/Корзина' element={<CrCard/>}/>
-            <Route path='/Товар' element={<CrTovar name={location.state.name}/>}/>
+            <Route path='/Каталог/Товар/*' element={<CrTovar/>}/>
           </Routes>
             {/* <CrExt/> */}
             {/* <CrRegistr/> */}
