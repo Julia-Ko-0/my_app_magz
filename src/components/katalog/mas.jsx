@@ -1,6 +1,6 @@
 let Mas=[
     {   
-        name:'Платье женское',
+        name:'Блузка',
         articul:'1248124',
          imgs:"/imgs/i_mas/Rectangle 23.png",
          price:1500,
