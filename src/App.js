@@ -19,7 +19,7 @@ function App() {
     //       <div/>
 
     <BrowserRouter>
-    <div class="App">
+    
         <div class='div'>
           <CrHeder/>
           {/* <CrMain/> */}
@@ -44,7 +44,7 @@ function App() {
             {/* <CrKatalog slk="Главная/Женщинам/Блузки и рубашки "/> */}
         </div>
       
-    </div>
+ 
     </BrowserRouter>
   );
 }

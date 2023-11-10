@@ -8,12 +8,17 @@ function CrKat_(props){
     return(
         <div class={a.div}>
             <div class={a.sort}>
-                <h2>Сортиповать по: </h2>
+              <div class={a.sort_}>
+              <h2>Сортиповать по: </h2>
                 <button class={a.btn_sort}>Популярности</button>
                 <button class={a.btn_sort}>Рейтингу</button>
                 <button class={a.btn_sort}> Цене</button>
-
+              </div>
+              
+                <img class={a.img_pr} src='/imgs/Ellipse 2.png' alt="" />
             </div>
+           
+            
 
           <div class={a.tov_vs}>
             <div class={a.filtr}>
@@ -27,16 +32,21 @@ function CrKat_(props){
                     <h2>color</h2>
                 </section>
             </div>
-          <selection class={a.tovars}>
+           
+            <selection class={a.tovars}>
             {
               Mas.map(m=>(
                 <Pr_ys_kk hrf={'/Каталог/Товар/?glOt=Женщинам&ot=Платья&page='+m.articul} gl_otd = {m.gl_otd}pr={props.src}skl={m.imgs} price={m.price} pr_price={m.pr_price}
                 otdel={m.otdel}
-                ocenk={m.ocenk}/>
+                ocenk={m.ocenk}
+                name={m.name}/>
               ))
             }
               
              </selection>
+         
+        
+          
           </div>
         </div>
     )

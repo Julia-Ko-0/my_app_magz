@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import a from './poisk.module.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'; 
-import { CrWomen,CrMen } from './crPoisk';
+import { CrWomen,CrMen,CrKids,CrObuv,CrToys,CrAcses,BigSize,CrDop,CrSale } from './crPoisk';
 
 function CrPoiskKatal(){
     return(
@@ -23,6 +23,14 @@ function CrPoiskKatal(){
             <div class={a.blck}>
             <Routes>
             <Route path='Женщинам' element={<CrWomen/>}/>
+            <Route path='Мужчинам' element={<CrMen/>}/>
+            <Route path='Детям' element={<CrKids/>}/>
+            <Route path='Обувь' element={<CrObuv/>}/>
+            <Route path='Игрушки' element={<CrToys/>}/>
+            <Route path='Аксессуары' element={<CrAcses/>}/>
+            <Route path='Большие размеры' element={<BigSize/>}/>
+            <Route path='Дополнитеьно' element={<CrDop/>}/>
+            <Route path='Акции' element={<CrSale/>}/>
 
           </Routes>
             </div>

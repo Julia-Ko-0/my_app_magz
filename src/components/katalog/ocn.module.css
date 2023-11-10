@@ -4,3 +4,55 @@
         width: 52px;
     
 }
+.div_tov{
+        margin-bottom: 10%;
+}
+.btn_ret{
+        display: grid;
+        grid-template-columns: 60% 30%;
+}
+.div{
+        background-color:#FFFDF5;
+}
+.prace{
+        display: grid;
+        grid-template-columns: 50% 20%;
+        line-height: 0.5;
+}
+.prace h3{
+      
+        line-height: 0;
+}
+.prace h1{
+      
+        font-size: 100%;
+}
+.prace svg{
+        width: 100%;
+        
+}
+.btn_podrbn{
+        width: 80%;
+        height: 160%;
+        background-color: #FFFDF5;
+        color: #514A7E;
+        
+}
+.im_strSVG{ 
+        padding-left: 5px;
+}
+.btn_podrbn:hover{
+        width: 80%;
+        height: 160%;
+        background-color:#514A7E ;
+        color: #FFFDF5;
+        
+        .im_str{
+                fill:#FFFDF5
+        }
+        
+}
+.svgs{
+        display: flex;
+        padding-top: 15%;
+}

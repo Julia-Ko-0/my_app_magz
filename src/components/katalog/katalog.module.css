@@ -9,10 +9,22 @@
     /* background-color:blue; */
 }
 .sort{
+    margin-top: -120px;
+    display: grid;
+    grid-template-columns: 85% 50%;
+    grid-template-rows: 60px 60px 60px 80%;
+}
+.sort_{
     display: flex;
+    grid-row-start: 3;
+
 }
 .tov_vs{
     display: flex;
+    margin-top: -10px;
+}
+.img_pr{
+    grid-column-start: 2;
 }
 .filtr{
     width: 15%;
@@ -24,3 +36,8 @@
     grid-column-gap: 10px;
     grid-row-gap: 1em;
 }
+/* .tv_d{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+} */

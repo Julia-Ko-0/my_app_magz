@@ -1,8 +1,10 @@
 .div{ 
+    width: 90%;
     display: block;
     background:#FFFDF5;
     padding-left: 10%;
-    padding-right: 10%;
+    /* padding-right: 10%; */
+    height: 100%;
     
 }
 
