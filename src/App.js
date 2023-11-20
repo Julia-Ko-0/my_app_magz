@@ -21,7 +21,7 @@ function App() {
     <BrowserRouter>
     
         <div class='div'>
-          <CrHeder/>
+          {/* <CrHeder/> */}
           {/* <CrMain/> */}
          {/* <CrTovar/> */}
          
@@ -38,7 +38,7 @@ function App() {
           </Routes>
             {/* <CrExt/> */}
             {/* <CrRegistr/> */}
-            
+                                     
         
             {/* <CrCard/> */}
             {/* <CrKatalog slk="Главная/Женщинам/Блузки и рубашки "/> */}

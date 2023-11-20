@@ -1,13 +1,11 @@
-.div{
+/* .div{
     display: block;
 }
 .btn_sort{
     border: none;
     background-color: #FFFDF5;
 }
-.btn_sort:active{
-    /* background-color:blue; */
-}
+
 .sort{
     margin-top: -120px;
     display: grid;
@@ -35,9 +33,4 @@
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 1em;
-}
-/* .tv_d{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
 } */

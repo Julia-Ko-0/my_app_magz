@@ -1,4 +1,4 @@
-.bnt_nazad{
+/* .bnt_nazad{
     display:flow-root;
     width: 43px;
     height: 43px;
@@ -84,7 +84,7 @@ font-family: Roboto;
 font-size: 300%;
 font-style: normal;
 font-weight: 250;
-line-height: 87.305%; /* 34.922px */
+line-height: 87.305%;
 }
 .otdel_2 h2{
     color: #7D7D7D;
@@ -126,7 +126,7 @@ grid-column-start:2 ;
 }
 .akk_otzv_inf{
     height: 10%;
-    /* padding-left: 10%; */
+
 }
 .btn_Carz{
     background-color: #514A7E;
@@ -136,4 +136,4 @@ flex-shrink: 0;
 margin: 5%;
 color: #FFFDF5;
 
-}
+} */

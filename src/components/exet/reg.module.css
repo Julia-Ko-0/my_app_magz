@@ -1,6 +1,7 @@
 .btn_otpr{
     background-color: #514A7E ;
     margin-right :   10%;
+    margin-top: 5%;
     color: #ffffff;
     height: 40px;
     width: 137px;
@@ -19,17 +20,42 @@
     border-radius: 100%;
     width: 45px;
     height: 45px;
+    margin-left: auto;
+    margin-right: -20px;
     background-color: #514A7E ;
 }
 .inp1{
     display: grid;
+    grid-column-start: 1;
+ 
     width: 80%; 
     grid-template-rows: repeat(4,1fr);
     gap: 20px;
 }
+.elips{
+    /* margin-right: -200em; */
+    margin-left: 100%;
+    margin-top: -25%;
+}
 .inp1 input{
     outline: none;
-    /* border: 0ch; */
+
+border-top: none ;
+border-left: none ;
+border-right: none ;
+border-bottom-color: #514A7E ;
+    box-shadow: none;
+}
+.inp2{
+    display: grid;
+    grid-column-start: 2;
+    width: 80%; 
+    grid-template-rows: repeat(4,1fr) ;
+    gap: 30px;
+}
+.inp2 input{
+    outline: none;
+
 border-top: none ;
 border-left: none ;
 border-right: none ;
@@ -38,6 +64,14 @@ border-bottom-color: #514A7E ;
 }
 .inps{
     display: grid;
-    width: 100%; 
+    padding-top: 2%;
+    width: 85%; 
     grid-template-columns: repeat(2, 2fr);
+    /* grid-template-columns: repeat(3, 2fr); */
+}
+.div{
+    /* padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 7%; */
+    padding: 15%;
 }
