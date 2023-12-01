@@ -1,6 +1,7 @@
 let Mas=[
     {
-         imgs:"./imgs/i_mas/Rectangle 23.png",
+        id:1, 
+        imgs:"./imgs/i_mas/Rectangle 23.png",
          price:1500,
          pr_price:2000,
          otdel:"Платья",
@@ -8,6 +9,7 @@ let Mas=[
 
     },
     {
+        id:2,
         imgs:"./imgs/i_mas/Rectangle 24.png",
         price:1700,
         pr_price:2100,
@@ -16,6 +18,7 @@ let Mas=[
 
    },
    {
+    id:3,
     imgs:"./imgs/i_mas/Rectangle 25.png",
     price:1000,
     pr_price:1500,
@@ -24,6 +27,7 @@ let Mas=[
 
 },
 {
+    id:4,
     imgs:"./imgs/i_mas/Rectangle 26.png",
     price:1600,
     pr_price:2000,
@@ -32,6 +36,25 @@ let Mas=[
 
 },
 {
+    id:5,
+    imgs:"./imgs/i_mas/Rectangle 23.png",
+    price:1500,
+    pr_price:2000,
+    otdel:"Платья",
+    ocenk:4
+
+},
+{
+    id:6,
+    imgs:"./imgs/i_mas/Rectangle 23.png",
+    price:1500,
+    pr_price:2000,
+    otdel:"Платья",
+    ocenk:4
+
+},
+{
+    id:7,
     imgs:"./imgs/i_mas/Rectangle 23.png",
     price:1500,
     pr_price:2000,

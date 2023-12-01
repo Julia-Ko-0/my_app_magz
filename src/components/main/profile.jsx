@@ -5,7 +5,7 @@ function Pr_ys_kk(props){
         b.push(Cr_zv())
     }
 return(
-    <div class={a.div_tov}>
+    <div id={props.n} class={a.div_tov}>
          <img class={a.img_pr} src={props.skl} alt="" />
          <div class={a.prace}>
             <h3 >{props.price} </h3>
