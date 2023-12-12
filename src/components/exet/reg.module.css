@@ -5,6 +5,8 @@
     color: #ffffff;
     height: 40px;
     width: 137px;
+    
+<<<<<<< HEAD
     border: 1px solid #514A7E;
     box-shadow: 0px 0px 10px #474361;
      
@@ -24,6 +26,25 @@ line-height: 87.305%;
     background-color: #ffffff;
     /* border: 1px black; */
     border: 1px solid #514A7E;
+=======
+    border: none;
+    box-shadow: 0 0 7px 5px #e9e7e1;
+     
+} 
+
+.btn_vhod{ 
+    height: 40px;
+    width: 137px;
+    background-color: #FFFDF5 ;
+    margin-right :   10%;
+    margin-top: 5%;
+    color: #514A7E;
+    height: 40px;
+    width: 137px;
+    border-color: #514A7E;
+    border-width: 1px;
+
+>>>>>>> ceb5594e89af7c9df21bd870d4b26959ce6e84e3
 }
 .hed{
     display: grid;
@@ -45,21 +66,23 @@ line-height: 87.305%;
  
     width: 80%; 
     grid-template-rows: repeat(4,1fr);
-    gap: 20px;
+    gap: 30px;
 }
 .elips{
     /* margin-right: -200em; */
-    margin-left: 100%;
+    width: 25%;
+    margin-left: 95%;
     margin-top: -25%;
 }
 .inp1 input{
     outline: none;
 
-border-top: none ;
-border-left: none ;
-border-right: none ;
-border-bottom-color: #514A7E ;
+    border-top: none ;
+    border-left: none ;
+    border-right: none ;
+    border-bottom-color: #7D7D7D ;
     box-shadow: none;
+    border-width: 1px;
 }
 .inp2{
     display: grid;
@@ -67,6 +90,7 @@ border-bottom-color: #514A7E ;
     width: 80%; 
     grid-template-rows: repeat(4,1fr) ;
     gap: 30px;
+    
 }
 .inp2 input{
     outline: none;
@@ -76,6 +100,12 @@ border-left: none ;
 border-right: none ;
 border-bottom-color: #514A7E ;
     box-shadow: none;
+    border-width: 1px;
+    border-bottom-color: #7D7D7D ;
+}
+.inps input{
+     height:  100%;
+     background-color:#FFFDF5 ;
 }
 .inps{
     display: grid;
@@ -85,8 +115,6 @@ border-bottom-color: #514A7E ;
     /* grid-template-columns: repeat(3, 2fr); */
 }
 .div{
-    /* padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 7%; */
     padding: 15%;
+    /* width: auto; */
 }

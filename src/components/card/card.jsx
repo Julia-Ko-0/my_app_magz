@@ -165,10 +165,10 @@ function  CrCard(){
                   
                     
                     </div>
-        
                 </div>
                 <div class={a.div_card}>
                     <div id='ydl'>
+
                     {
                     MasCard.map(m=>(
                         <CrElCard id={m.polz} skl={m.img} price={m.price} size={m.size}
