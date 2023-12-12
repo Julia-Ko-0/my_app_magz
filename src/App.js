@@ -12,19 +12,11 @@ import { CrPoiskKatal } from './components/poisk_katal/poisk_katal.jsx';
 function App() {
   
   return (
-    //  <div class="App">
-    //     <div class='div'>
-    //     <CrHeder/>
-    //       <div/>
-    //       <div/>
 
     <BrowserRouter>
     
         <div class='div'>
-          {/* <CrHeder/> */}
-          {/* <CrMain/> */}
-         {/* <CrTovar/> */}
-         
+          <CrHeder/>
         
           <Routes>
           <Route path='/' element={<CrRegistr/>}/>

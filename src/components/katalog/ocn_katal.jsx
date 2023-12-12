@@ -1,5 +1,6 @@
 import a from './ocn.module.css' 
 import { CrKat_ } from './katalog'
+import { CrHeder } from '../heder/heder'
 import { CrTovar } from './tovar'
 import { NavLink } from 'react-router-dom'
 function CrKatalog(props){

@@ -1,19 +1,44 @@
+.div h1{
+    color: #121212;
+
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 87.305%; 
+}
 .btns{
     display: flex;
     width: 70%;
     grid-area: post-6;
+    margin-top: 5%;
     /* grid-template-columns: repeat(2,25%); */
 }
 .btn_vh{
-    width: 80%;
-    margin: 2%;
+    background-color: #514A7E ;
+    margin-right :   10%;
+    
+    grid-row-start: 5;
+    color: #ffffff;
+    height: 40px;
+    width: 137px;
+    border: 1px solid #514A7E;
+    box-shadow: 0px 0px 10px #474361;
+   
+
 }
 .btn_reg{
-    width: 80%;
-    margin: 2%;
+    height: 40px;
+    width: 137px;
+
+    grid-row-start: 5;
+    background-color: #ffffff;
+    border: 1px solid #514A7E;
 }
 .div{
-    padding: 5%;
+    padding-left: 15%;
+    padding-top:10%;
+    
 display: grid;
 grid-template-areas: "post-1 post-1 post-2"  
                        "post-3 post-3 post"  
@@ -25,8 +50,13 @@ grid-template-areas: "post-1 post-1 post-2"
 }
 .btn_npporol{
     grid-area: post-5;
-    width: 20%;
-    font-size: 1%;
+    width: 15%;
+    height: 10px;
+    font-size: 70%;
+    border: 0;
+    margin-top: -1%;
+    background-color: #FFFDF5;
+    color: #514A7E;
 }
 .inp1{
     grid-area: post-3;
@@ -50,6 +80,19 @@ grid-template-areas: "post-1 post-1 post-2"
 }
 .btn_ext{
     grid-area: post-2;
-    border-radius: 50%;
-    width: 40px;
+
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+  
+    background-color: #514A7E ;
+    border: 1px solid #514A7E; 
+}
+.div input{
+    background-color: #FFFDF5;
+    font-size: 150%;
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-style: normal;
+font-weight: 300;
 }

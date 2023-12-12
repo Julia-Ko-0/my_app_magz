@@ -1,4 +1,4 @@
-/* .bnt_nazad{
+.bnt_nazad{
         background-color: #514A7E;
         border-radius: 50%;
         width: 52px;
@@ -13,6 +13,8 @@
 }
 .div{
         background-color:#FFFDF5;
+        padding-left:  5%;
+        padding-right: 5%;
 }
 .prace{
         display: grid;
@@ -55,4 +57,4 @@
 .svgs{
         display: flex;
         padding-top: 15%;
-} */
+}

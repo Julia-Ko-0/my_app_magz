@@ -1,0 +1,52 @@
+.div_podv{
+    background-color: #514A7E;
+    display: grid;
+    grid-template-columns:  10% 10% 15% 15% 10%;
+    gap: 7%;
+    padding-left: 5%;
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: -10%;
+}
+.div_podv h1{
+    color: #FFFDF5;
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 120%;
+}
+.div_podv h3{
+    color: #FFFDF5;
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 90%;
+    line-height: 100%;
+
+}
+.div_podv h4{
+    color: #FFFDF5;
+    font-family: monospace;
+    font-weight: 400;
+    line-height: normal;
+    font-size:80%;
+    font-style: normal;
+}
+.num{
+    display: flex;
+}
+.num svg{
+    margin-right: 5%;
+}
+.logo{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+.img_{
+    grid-row-start: 2;
+    width: 60%;
+    opacity: .5;
+}

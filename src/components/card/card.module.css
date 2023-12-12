@@ -1,53 +1,172 @@
-/* .ElTov{
-display: flex;
-
-}
-.img{
-    width: 300px;
-    height: 300px;
-}
-.btns{
-display: grid;
-grid-template-columns: 2fr 2fr;
-gap: 10%;
-
-}
-.btns button{
+.div{
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 10%;
+    padding-left: 7%;
+}
+.korz{
+    display: grid;
+    grid-template-columns: 5% 20% 15%;
+    grid-template-rows: 25% 10%;
+}
+.ElTov{
+    display: flex;
     
     }
-.ElTov button{
-    border: none;
-    background-color: #FFFDF5;
-    margin: 10%;
-}
-.dan{display: flex;
-    height: 20%;
-}
-.dan h1{
-   line-height: 2;
-}
-.btn_verh{
-    border-radius: 50%;
-    width: 72px;
-height: 72px;
-background-color:#514A7E ;
-}
-.bnt_nazad{
-    width: 43px;
-height: 43px;
-    border-radius: 100%;
-    background-color: #514A7E;
-}
-.bnt_nazad:hover{
-   
-    background-color:#FFFDF5;
-    .strelk{
-        fill:#514A7E;
+
+    .img{
+        width: 300px;
+        height: 300px;
     }
+    .btns{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 10%;
+        
+        }
+        .btns button{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10%;
+            
+            }
+        .ElTov button{
+            border: none;
+            background-color: #FFFDF5;
+            margin: 10%;
+        }
+        .dan{display: flex;
+            height: 20%;
+        }
+        .dan h1{
+           line-height: 2;
+        }
+        .btn_verh{
+            border-radius: 50%;
+            width: 72px;
+        height: 72px;
+        background-color:#514A7E ;
+        }
+        .bnt_nazad{
+            width: 50px;
+        height: 50px;
+            border-radius: 100%;
+            background-color: #514A7E;
+        }
+        .bnt_nazad:hover{
+           
+            background-color:#FFFDF5;
+            .strelk{
+                fill:#514A7E;
+            }
+        }
+.card_icnKoll{
+    display: grid;
+    grid-template-columns: 1% 10%;
+    grid-template-rows: 2;
 }
+.kolVcar{
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+.svgs{
+    grid-row-start: 2;
+}
+.div2{
+    display: grid;
+}
+.div_ob_card{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.div_imgCr{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+.imgCr{
+    grid-row-start: 2;
+}
+.div_mc{
+    color: #121212;
+
+font-family: Roboto;
+font-size: 400%;
+font-style: normal;
+font-weight: 300;
+line-height: 87.305%;
+}
+.tovr{
+  
+    display: flex;
+    width: auto;
+    height: 100%;
+    /* overflow-y: auto; */
+    overflow-x: scroll;
+    margin-right: 5%;
+    margin-bottom: 10%;
+   
+}
+.tovr::-webkit-scrollbar {
+    display: none;
+}
+.itogo{
+    display: grid;
+    grid-template-columns: 7% 10%;
+    grid-template-rows: 15% 50%;
+}
+.zakaz{
+    border: 0.5px solid #514A7E;
+
+background: #514A7E;
+width: 10%;
+height: 5%;
+color: #FFFDF5;
+}
+.itogo h1{
+    color: #514A7E;
+grid-row-start: 1;
+grid-column-start: 2;
+font-family: Roboto;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 118%;
+}
+.itogo h2{
+    grid-row-start: 2;
+grid-column-start: 1;
+color: #121212;
+
+font-family: Roboto;
+font-size: 150%; 
+font-style: normal;
+font-weight: 400;
+line-height: 118%;
+}
+.card_icnKoll{
+    grid-row-start: 2;
+    grid-column-start: 3;
+    display: grid;
+    grid-template-columns: repeat(2, 15%);
+    grid-template-rows: repeat(2, 10%);
+
+}
+.card_icnKoll h2{
+    width: 10px;
+    height: 5px;
+    line-height: 0;
+    
+        grid-row-start: 1;
+        grid-column: 2;
+    }
+.svgs{
+    grid-column-start: 1;  
+    grid-row: 2;
+}
+.div_card{
+    display: block;
+}
+/* 
+
+
 .korz{
     display: grid;
     grid-template-columns: repeat(3, 15%);

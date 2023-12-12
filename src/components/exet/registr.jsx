@@ -4,6 +4,8 @@ import a from './reg.module.css'
 import { render } from '@testing-library/react'
 let polz=[]
  function CrRegistr(){
+    // let heder = document.getElementById('heder')
+    // heder.style.display='none'
     const [inp1Value,setInp]=useState('')
     const [inp2Value,setInp2]=useState('')
     const [inp3Value,setInp3]=useState('')

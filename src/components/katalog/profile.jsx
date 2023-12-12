@@ -11,6 +11,7 @@ function Pr_ys_kk(props){
         for(let i = 0;i<props.ocenk;i++){
             b.push(Cr_zv())
         }
+    
         return(
             <div class={a.div_tov}>
                  <img class={a.img_pr} src={props.skl} alt="" />
@@ -57,6 +58,7 @@ function Pr_ys_kk(props){
     for(let i = 0;i<props.ocenk;i++){
         b.push(Cr_zv())
     }
+  
 return(
     <div class={a.div_tov}>
          <img class={a.img_pr} src={props.skl} alt="" />

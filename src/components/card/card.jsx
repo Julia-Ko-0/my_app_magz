@@ -1,67 +1,18 @@
 import a from './card.module.css'
 import { useState } from "react"
-
+import {Mas} from '../main/mas.jsx'
+import {Pr_ys_kk} from '../main/profile.jsx'
 import { MasCard } from './cardMas'
 import { NavLink } from 'react-router-dom'
 // let Mas= MasCard
-function CrCard(){
-    // const [Mas, setShapes] = useState(
-    //     MasCard
-    // )
-    function Zacazat(){
-        let result = window.confirm('Вы уверены?')
-        if(result == 1){
-           let ydl = document.getElementById('ydl')
-           ydl.innerHTML=''
-        }
-    }
-    return(
-        <div class={a.div}>
-            <div class={a.korz}>
-                <NavLink to='/Главная'>
-                <button class={a.bnt_nazad}>
-                <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+console.log(Mas)
+let price = 0
+// function getPrice(pr){
+//     console.log(price,pr)
+//     price=pr+price
 
-                    <path class={a.strelk} d="M12.6464 21.6464C12.4512 21.8417 12.4512 22.1583 12.6464 22.3536L15.8284 25.5355C16.0237 25.7308 16.3403 25.7308 16.5355 25.5355C16.7308 25.3403 16.7308 25.0237 16.5355 24.8284L13.7071 22L16.5355 19.1716C16.7308 18.9763 16.7308 18.6597 16.5355 18.4645C16.3403 18.2692 16.0237 18.2692 15.8284 18.4645L12.6464 21.6464ZM30 21.5L13 21.5L13 22.5L30 22.5L30 21.5Z" fill="#FFFDF5"/>
-                    </svg>
-                    
-            </button>
-                </NavLink>
-            
-            <h1>Корзина</h1>
-            <div class={a.card_icnKoll}>
-            <h2 id='kolVcar'>0</h2>
-               <svg class={a.svgs}  xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
-               <path class={a.pth} d="M23.6117 11.3333V8.54715C23.6117 7.67896 23.4407 6.81928 23.1084 6.01718C22.7762 5.21509 22.2892 4.48628 21.6753 3.87238C21.0614 3.25849 20.3326 2.77152 19.5305 2.43928C18.7284 2.10704 17.8687 1.93604 17.0005 1.93604C16.1324 1.93604 15.2727 2.10704 14.4706 2.43928C13.6685 2.77152 12.9397 3.25849 12.3258 3.87238C11.7119 4.48628 11.2249 5.21509 10.8927 6.01718C10.5604 6.81928 10.3894 7.67896 10.3894 8.54715V15.1583C10.3894 15.4087 10.4889 15.649 10.6661 15.8261C10.8432 16.0032 11.0834 16.1027 11.3339 16.1027C11.5844 16.1027 11.8246 16.0032 12.0017 15.8261C12.1788 15.649 12.2783 15.4087 12.2783 15.1583V13.2221H19.8339V11.3333H12.2783V8.54715C12.2783 7.29473 12.7758 6.09362 13.6614 5.20803C14.547 4.32244 15.7481 3.82492 17.0005 3.82492C18.253 3.82492 19.4541 4.32244 20.3397 5.20803C21.2252 6.09362 21.7228 7.29473 21.7228 8.54715V15.111C21.7228 15.3615 21.8223 15.6017 21.9994 15.7789C22.1765 15.956 22.4167 16.0555 22.6672 16.0555C22.9177 16.0555 23.1579 15.956 23.335 15.7789C23.5121 15.6017 23.6117 15.3615 23.6117 15.111V13.2221H28.3339V30.2221H5.66721V13.2221H8.50054V11.3333H3.77832V30.3071C3.77832 30.7856 3.96837 31.2444 4.30667 31.5827C4.64496 31.921 5.10379 32.111 5.58221 32.111H28.4189C28.8973 32.111 29.3561 31.921 29.6944 31.5827C30.0327 31.2444 30.2228 30.7856 30.2228 30.3071V11.3333H23.6117Z" fill="#121212"/>
-              </svg>
-             
-            </div>
-       
-            </div>
-          
-            <div id='ydl'>
-            {
-              MasCard.map(m=>(
-                <CrElCard id={m.polz} skl={m.img} price={m.price} size={m.size}
-                color={m.color}
-                name={m.name} kolv={m.kolv} articul={m.articul}/>
-              ))
-            }
-            </div>
-          
-            <button onClick={Zacazat}>Заказать </button>
-             <img class={a.imgCr} src='./imgs/Ellipse 2 (1).png' alt="" />
-            <button class={a.btn_verh}>
-            <a href='#heder'>
-                <svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path id="Arrow 10" d="M46.3536 28.6464C46.1583 28.4512 45.8417 28.4512 45.6464 28.6464L42.4645 31.8284C42.2692 32.0237 42.2692 32.3403 42.4645 32.5355C42.6597 32.7308 42.9763 32.7308 43.1716 32.5355L46 29.7071L48.8284 32.5355C49.0237 32.7308 49.3403 32.7308 49.5355 32.5355C49.7308 32.3403 49.7308 32.0237 49.5355 31.8284L46.3536 28.6464ZM46.5 55L46.5 29L45.5 29L45.5 55L46.5 55Z" fill="#FFFDF5"/>
-                </svg>
-                </a>
-            </button>
-        </div>
-    )
-}
 
+// }
 
 function CrElCard(props){
     const [shapes, setShapes] = useState(
@@ -120,7 +71,11 @@ function CrElCard(props){
              }
         }
     }
-  
+    console.log(props.kolv*props.price)
+    let prs = props.kolv*props.price
+    // getPrice(prs)
+    price=prs+price
+    console.log(price)
     return(
         <section id={props.articul} class={a.ElTov}>
             <img class={a.img} src={props.skl} alt="" />
@@ -171,5 +126,89 @@ function CrElCard(props){
     )
 }
 } 
+function  CrCard(){
+    
+    // const [Mas, setShapes] = useState(
+    //     MasCard
+    // )
+    let poisk = document.getElementById('poisk')
+    poisk.style.display='flex'
+    function Zacazat(){
+        let result = window.confirm('Вы уверены?')
+        if(result == 1){
+           let ydl = document.getElementById('ydl')
+           ydl.innerHTML=''
+        }
+    }
+  
+    return(
+        <div class={a.div}>
+            <div class={a.div_ob_card}>
+                <div class={a.div2}>
+                <div class={a.korz}>
+                    <NavLink to='/Главная'>
+                    <button class={a.bnt_nazad}>
+                    <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
 
+                        <path class={a.strelk} d="M12.6464 21.6464C12.4512 21.8417 12.4512 22.1583 12.6464 22.3536L15.8284 25.5355C16.0237 25.7308 16.3403 25.7308 16.5355 25.5355C16.7308 25.3403 16.7308 25.0237 16.5355 24.8284L13.7071 22L16.5355 19.1716C16.7308 18.9763 16.7308 18.6597 16.5355 18.4645C16.3403 18.2692 16.0237 18.2692 15.8284 18.4645L12.6464 21.6464ZM30 21.5L13 21.5L13 22.5L30 22.5L30 21.5Z" fill="#FFFDF5"/>
+                        </svg>
+                        
+                    </button>
+                    </NavLink>
+                
+                    <h1 class={a.div_mc}>Корзина</h1>
+                    <div class={a.card_icnKoll}>
+                    <h2 id='kolVcar'>0</h2>
+                        <svg class={a.svgs}  xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                        <path class={a.pth} d="M23.6117 11.3333V8.54715C23.6117 7.67896 23.4407 6.81928 23.1084 6.01718C22.7762 5.21509 22.2892 4.48628 21.6753 3.87238C21.0614 3.25849 20.3326 2.77152 19.5305 2.43928C18.7284 2.10704 17.8687 1.93604 17.0005 1.93604C16.1324 1.93604 15.2727 2.10704 14.4706 2.43928C13.6685 2.77152 12.9397 3.25849 12.3258 3.87238C11.7119 4.48628 11.2249 5.21509 10.8927 6.01718C10.5604 6.81928 10.3894 7.67896 10.3894 8.54715V15.1583C10.3894 15.4087 10.4889 15.649 10.6661 15.8261C10.8432 16.0032 11.0834 16.1027 11.3339 16.1027C11.5844 16.1027 11.8246 16.0032 12.0017 15.8261C12.1788 15.649 12.2783 15.4087 12.2783 15.1583V13.2221H19.8339V11.3333H12.2783V8.54715C12.2783 7.29473 12.7758 6.09362 13.6614 5.20803C14.547 4.32244 15.7481 3.82492 17.0005 3.82492C18.253 3.82492 19.4541 4.32244 20.3397 5.20803C21.2252 6.09362 21.7228 7.29473 21.7228 8.54715V15.111C21.7228 15.3615 21.8223 15.6017 21.9994 15.7789C22.1765 15.956 22.4167 16.0555 22.6672 16.0555C22.9177 16.0555 23.1579 15.956 23.335 15.7789C23.5121 15.6017 23.6117 15.3615 23.6117 15.111V13.2221H28.3339V30.2221H5.66721V13.2221H8.50054V11.3333H3.77832V30.3071C3.77832 30.7856 3.96837 31.2444 4.30667 31.5827C4.64496 31.921 5.10379 32.111 5.58221 32.111H28.4189C28.8973 32.111 29.3561 31.921 29.6944 31.5827C30.0327 31.2444 30.2228 30.7856 30.2228 30.3071V11.3333H23.6117Z" fill="#121212"/>
+                        </svg>
+                  
+                    
+                    </div>
+        
+                </div>
+                <div class={a.div_card}>
+                    <div id='ydl'>
+                    {
+                    MasCard.map(m=>(
+                        <CrElCard id={m.polz} skl={m.img} price={m.price} size={m.size}
+                        color={m.color}
+                        name={m.name} kolv={m.kolv} articul={m.articul}/>
+                    ))
+                    } 
+                    </div>
+                    <div class={a.itogo}>
+                        <h2>Итого:</h2><h1>{price}</h1>
+                    </div>
+                    <button class={a.zakaz}onClick={Zacazat}>Заказать </button>
+                    <button class={a.btn_verh}>
+                    <a href='#heder'>
+                        <svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="Arrow 10" d="M46.3536 28.6464C46.1583 28.4512 45.8417 28.4512 45.6464 28.6464L42.4645 31.8284C42.2692 32.0237 42.2692 32.3403 42.4645 32.5355C42.6597 32.7308 42.9763 32.7308 43.1716 32.5355L46 29.7071L48.8284 32.5355C49.0237 32.7308 49.3403 32.7308 49.5355 32.5355C49.7308 32.3403 49.7308 32.0237 49.5355 31.8284L46.3536 28.6464ZM46.5 55L46.5 29L45.5 29L45.5 55L46.5 55Z" fill="#FFFDF5"/>
+                        </svg>
+                        </a>
+                    </button>
+                </div>
+                </div>
+                <div class={a.div_imgCr}>
+                <img class={a.imgCr} src='./imgs/Ellipse 2 (1).png' alt="" />
+                </div>
+               
+            
+            </div >
+            <h1  class={a.div_mc}>может чтото еще</h1>
+            <section id='tovrs'class={a.tovr}>
+            {
+              Mas.map(m=>(
+                <Pr_ys_kk skl={m.imgs} price={m.price} pr_price={m.pr_price}
+                otdel={m.otdel}
+                ocenk={m.ocenk}/>
+              ))
+            }
+      
+        </section>
+           
+        </div>
+    )
+}
 export{CrCard}

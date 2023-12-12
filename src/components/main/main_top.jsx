@@ -27,7 +27,7 @@ function Top(){
                     </div>
                 </div>
                 <div class={a.btns}>
-                    <NavLink to='Каталог' >
+                <NavLink to='/Поиск'>
                     <button class={a.btnn}><h3 class={a.hhh}>Каталог</h3></button>
                     </NavLink>
                 </div>

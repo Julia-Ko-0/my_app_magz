@@ -96,7 +96,7 @@ function CrTovar(){
                         <section class={a.otz}>
                            
                             {Mas[i].otzovs.map(m=>(
-                                <CrElOtz name={m.name} text={m.text}/>
+                                <CrElOtz name={m.name} text={m.text} imgs={m.img}/>
                             ))}
                         </section>
                      
@@ -110,7 +110,7 @@ function CrTovar(){
 function CrElOtz(props){
     return(
         <div class={a.akk_otzv}>
-        <img  class={a.img_akk} width='573' src="./imgs/Ellipse 8.png" alt="" />
+        <img  class={a.img_akk} width='573' src={props.imgs} alt="" />
             <div class={a.akk_otzv_inf}>
                 <h1>{props.name}</h1>
                 <h2>{props.text}</h2>
@@ -119,4 +119,4 @@ function CrElOtz(props){
     )
   
 }
-export{CrTovar}
+export{CrTovar,CrElOtz}

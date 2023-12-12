@@ -1,0 +1,92 @@
+.div_{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+}
+.div_btn_El{
+    display: grid;
+    grid-template-columns: 87% 13%;
+}
+.div_::-webkit-scrollbar {
+    display: none;
+}
+.otz_nach_pok{
+    color: #121212;
+    font-family: DejaVu Sans Mono, monospace;
+    font-size: 220%;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 87.305%;
+}
+.b_l{
+    display: none;
+}
+.akk_otzv{
+    margin: 2%;
+    display: flex;
+    background-color:#FFFDF5;
+    width: 800px;
+   padding: 5%;
+    box-shadow: 0 0 10px 5px rgb(238, 238, 238);
+}
+.img_akk{
+    width: 150px;
+    margin: auto;
+    margin-right: 10%;
+
+}
+.akk_otzv_inf{
+    width: 450px;
+}
+.img_akk img{
+    width: 100%;
+ 
+}
+.div_otz{
+    display: flex;
+}
+.div_otz button{
+    border-radius: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+     background-color: #FFFDF5;
+}
+.svg_str{
+    transform: rotate(180deg)
+}
+
+.d_name_date{
+    display: flex;
+
+    width: 100%;
+}
+.d_name_date h1{
+   
+    margin-right: 10%;
+    font-size: 120%;
+    font-family: Roboto;
+    font-weight: normal;
+font-style: normal;
+
+}
+.date{
+    color: #514A7E;
+}
+.text{
+    color: #7D7D7D;
+    font-family: FreeMono, monospace;
+    font-weight: normal;
+font-style: normal;
+font-size: 120%;
+}
+.btn_dob_otz{
+    width: 10%;
+    height: 40px;
+    margin-left: 2%;
+    background-color: #514A7E;
+    color: #FFFDF5;
+    font-family: Roboto;
+    font-weight: normal;
+font-style: normal;
+}
