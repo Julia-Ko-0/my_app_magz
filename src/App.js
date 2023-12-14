@@ -9,6 +9,7 @@ import { CrExt } from './components/exet/ext.jsx';
 import { CrRegistr } from './components/exet/registr.jsx';
 import { CrTovar } from './components/katalog/tovar.jsx';
 import { CrPoiskKatal } from './components/poisk_katal/poisk_katal.jsx';
+import { PrFavourites } from './components/favorit/favr.jsx';
 function App() {
   
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path='/Корзина' element={<CrCard/>}/>
             <Route path='/Каталог/Товар/*' element={<CrTovar/>}/>
             <Route path='/Поиск*' element={ <CrPoiskKatal/>}/>
+            <Route path='/Избранное' element={<PrFavourites/>}/>
           </Routes>
             {/* <CrExt/> */}
             {/* <CrRegistr/> */}

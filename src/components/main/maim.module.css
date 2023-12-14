@@ -89,6 +89,8 @@
 
 .coctel{
     color: #514A7E;
+    font-family: Bad script;
+
 }
 .t1 h2{
 
@@ -207,7 +209,7 @@ line-height: 5%; /* 18.88px */
 .ysKyp{
     color: #121212;
 
-font-family: DejaVu Sans Mono, monospace;
+font-family: roboto;
 font-size: 220%;
 font-style: normal;
 font-weight: 300;
@@ -217,7 +219,7 @@ line-height: 87.305%;
     grid-row-start: 2;
     grid-column-start: 2;
     color: #514A7E;
-    font-family:Brush Script Std;
+    font-family:Bad Script ;
 
     font-size: 220%;
   font-style: italic;
@@ -255,13 +257,13 @@ line-height: 87.305%;
     transform: rotate(180deg);
 }
 .btn_podrob{
+    margin-left: 5%;
     width: 50%;
     height: 50px;
     background-color: #FFFDF5;
     color:#514A7E;
     border-color: #514A7E;
     font-size: 110%;
-    padding-left: 5%;
     grid-column-start:1 ;
 }
 .btn_podrob:hover{

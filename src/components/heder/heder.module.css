@@ -19,6 +19,7 @@
     border-right: none;
     width: 70%;
     height: 20px;
+    background-color:#FFFDF5 ;
 }
 .inp_d{
     display: flex;

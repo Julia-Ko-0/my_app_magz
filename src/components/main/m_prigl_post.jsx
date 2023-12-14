@@ -11,6 +11,8 @@ function CrPrPost(){
                             <input placeholder='Номер телефона'></input>
                             <input placeholder='Электронная почта'></input>
                         <div class={a.inp_chec}>
+                            <label class={a.label}>
+                            </label>
                             <input class={a.inpChec}type="checkbox"></input>
                             <h5>Даю согласие на обработку персональных данных</h5>
                         </div>

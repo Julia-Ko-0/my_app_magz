@@ -10,8 +10,8 @@ return(
          <div class={a.div_inf}>
             <div  class={a.price_div_t}>
             <div class={a.prace}>
-                <h3 >{props.price} </h3>
-                <h3 class={a.price_pr}>{props.pr_price}</h3>
+                <h3 >{props.price} руб</h3>
+                <h3 class={a.price_pr}>{props.pr_price} руб</h3>
             </div>
             <h3 class={a.otdel}>{props.otdel}</h3>
             </div>
