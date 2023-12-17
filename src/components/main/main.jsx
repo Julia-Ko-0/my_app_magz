@@ -11,13 +11,15 @@ import { CrPodv } from './m_podv'
 
 
 function CrMain(){
+        let heder = document.getElementById('heder')
+    heder.style.display='grid'
     return(
        
         <div class={a.ob_div}>
               <Top/>
               <Text/>
               <Ys_kyp/>
-              <Otz_kl/>
+              {/* <Otz_kl/> */}
               <CrZd_Vp/>
               <CrSotr/>
               <CrPrPost/>

@@ -1,8 +1,9 @@
 .heder{
-    width: 100%;
-    padding-top: 5%;
+    display: none;
+    grid-template-columns: 70% 15%;
+    padding-top: 2%;
     padding-bottom: 2%;
-    margin-left: 5%;
+    margin-left: 7%;
 
 }
 .svg_{
@@ -23,7 +24,6 @@
 .inp_d{
     display: flex;
     float: right;
-    padding-right: 15%;
-    width: 20%;
+    grid-column-start: 2;
 }
 
