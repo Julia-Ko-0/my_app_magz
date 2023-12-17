@@ -5,30 +5,21 @@ import {Pr_ys_kk} from '../main/profile.jsx'
 import { MasCard } from './cardMas'
 import { NavLink } from 'react-router-dom'
 // let Mas= MasCard
-console.log(Mas)
-let price = 0
-// function getPrice(pr){
-//     console.log(price,pr)
-//     price=pr+price
 
-
-// }
 
 function CrElCard(props){
     const [shapes, setShapes] = useState(
         MasCard
     )
     
-    
+        
     
  
     if(props.id === 1){
-        
-
+        let p = props.price * props.kolv
+        props.ust(props.prs+p)
     function DobElem(){
-       
-        console.log(props.articul)
-        console.log(shapes)
+
          shapes.map(elem=>{
             if(elem.articul == props.articul && elem.size == props.size){
                elem.kolv++
@@ -44,8 +35,6 @@ function CrElCard(props){
     }
     function DelElem(){
         
-        console.log(props.articul)
-        console.log(shapes)
         for(let i=0;i<shapes.length;i++){
             if(shapes[i].articul == props.articul && shapes[i].size == props.size){
                 shapes[i].kolv--
@@ -71,11 +60,7 @@ function CrElCard(props){
              }
         }
     }
-    console.log(props.kolv*props.price)
-    let prs = props.kolv*props.price
-    // getPrice(prs)
-    price=prs+price
-    console.log(price)
+ 
     return(
         <section id={props.articul} class={a.ElTov}>
             <img class={a.img} src={props.skl} alt="" />
@@ -127,7 +112,7 @@ function CrElCard(props){
 }
 } 
 function  CrCard(){
-    
+    const [prices, setPrice] = useState(0)
     // const [Mas, setShapes] = useState(
     //     MasCard
     // )
@@ -140,7 +125,7 @@ function  CrCard(){
            ydl.innerHTML=''
         }
     }
-  
+//   console.log(prices/kolcard)
     return(
         <div class={a.div}>
             <div class={a.div_ob_card}>
@@ -171,14 +156,14 @@ function  CrCard(){
 
                     {
                     MasCard.map(m=>(
-                        <CrElCard id={m.polz} skl={m.img} price={m.price} size={m.size}
+                        <CrElCard  prs = {prices} ust = { setPrice} id={m.polz} skl={m.img} price={m.price} size={m.size}
                         color={m.color}
                         name={m.name} kolv={m.kolv} articul={m.articul}/>
                     ))
                     } 
                     </div>
                     <div class={a.itogo}>
-                        <h2>Итого:</h2><h1>{price}</h1>
+                        <h2>Итого:</h2><h1>{prices}</h1>
                     </div>
                     <button class={a.zakaz}onClick={Zacazat}>Заказать </button>
                     <button class={a.btn_verh}>

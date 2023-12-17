@@ -1,6 +1,9 @@
 .div_ob_faq{
     margin-top: -15%;
 }
+/* .zagolov h1{
+    font-family: roboto;
+} */
 .voprs{
     display: grid;
     width: 90%;
@@ -34,7 +37,7 @@ line-height: normal;
     grid-row-start: 2;
     color: #514A7E;
 
-font-family:Brush Script MT, Brush Script Std, cursive;
+font-family:Bad Script ;
 font-size: 40px;
 font-style: oblique;
 font-weight: 400;

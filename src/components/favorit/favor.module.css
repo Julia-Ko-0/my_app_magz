@@ -1,0 +1,65 @@
+.body { 
+    background: #FFFDF5;
+}
+
+.svg{
+    margin-top: 49px;
+    margin-left: 135px;
+}
+
+.svg1 {
+    margin-top: 4px;
+    margin-left: 203px;
+    width: 20px;
+    height: 20px;
+}
+
+.svg2 {
+    margin-top: 5.5px;
+    width: 20px;
+    height: 20px;
+}
+
+.svg3 {
+    margin-top: 5.5px;
+    width: 20px;
+    height: 20px;
+}
+
+.svg4 {
+    margin-top: 5.5px;
+    width: 20px;
+    height: 20px;
+}
+
+.input1{
+    background-color: #FFFDF5;
+    font-family: Roboto;
+    color: #7D7D7D;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 34.5%;
+    height: 20px;
+}
+.input{
+    margin-top: -35px;
+    display: flex;
+    margin-left: 590px; 
+    width: 69.5%; 
+}
+
+.i {
+    color: #121212;
+    font-family: Roboto;
+    font-size: 40px;
+    margin-left: 140px;
+    margin-top: 45px;
+}
+
+/* .img {
+    width: 280.405px;
+    height: 319px;
+    margin-left: 332px;
+    margin-top: 45px;
+} */

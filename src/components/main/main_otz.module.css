@@ -13,7 +13,7 @@
 }
 .otz_nach_pok{
     color: #121212;
-    font-family: DejaVu Sans Mono, monospace;
+    font-family: roboto;
     font-size: 220%;
     font-style: normal;
     font-weight: 300;
@@ -75,7 +75,7 @@ font-style: normal;
 }
 .text{
     color: #7D7D7D;
-    font-family: FreeMono, monospace;
+    font-family:roboto;
     font-weight: normal;
 font-style: normal;
 font-size: 120%;
