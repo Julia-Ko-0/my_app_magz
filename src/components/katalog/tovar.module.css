@@ -285,3 +285,29 @@ color: #FFFDF5;
 .white{
     background: white;
 }
+.n_d{
+    display: flex;
+}
+.n_d h1{
+    color: #121212;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+line-height: 170%; 
+}
+.n_d h2{
+    margin-left: 10%;
+    color: #514A7E;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 170%; /* 20.4px */
+}
+.kom{
+    color: #7D7D7D;
+font-family: Roboto;
+font-size: 15px;
+font-style: normal;
+font-weight: 300;
+line-height: 170%; /* 20.4px */
+}

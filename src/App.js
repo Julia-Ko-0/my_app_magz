@@ -28,7 +28,7 @@ function App() {
             <Route path='/Корзина' element={<CrCard/>}/>
             <Route path='/Каталог/Товар/*' element={<CrTovar/>}/>
             <Route path='/Поиск*' element={ <CrPoiskKatal/>}/>
-            <Route path='/Избранное' element={<PrFavourites/>}/>
+            {/* <Route path='/Избранное' element={<PrFavourites/>}/> */}
           </Routes>
             {/* <CrExt/> */}
             {/* <CrRegistr/> */}

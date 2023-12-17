@@ -16,7 +16,7 @@ let MasCard=[
         articul:12235124,
         color:'Синий',
         size:"35",
-        kolv:2,
+        kolv:'2',
         price:1700
     },
     {
