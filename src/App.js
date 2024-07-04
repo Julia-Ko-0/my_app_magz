@@ -10,17 +10,23 @@ import { CrRegistr } from './components/exet/registr.jsx';
 import { CrTovar } from './components/katalog/tovar.jsx';
 import { CrPoiskKatal } from './components/poisk_katal/poisk_katal.jsx';
 import { PrFavourites } from './components/favorit/favr.jsx';
+import { useState } from "react"
+
 function App() {
-  
+  let polz_dan = JSON.parse(localStorage.getItem('user'))
+  let name_=polz_dan[0].ФИО
+  const [newName,SetCount]=useState('')
+
   return (
+
 
     <BrowserRouter>
     
         <div class='div'>
-          <CrHeder/>
+          <CrHeder name={newName}/>
         
           <Routes>
-          <Route path='/' element={<CrRegistr/>}/>
+          <Route path='/' element={<CrRegistr fun={SetCount}/>}/>
           <Route path='/Вход' element={<CrExt/>}/>
           {/* <Route path='/Главная/*' element={<CrHeder/>}/> */}
             <Route path='/Главная' element={<CrMain/>}/>

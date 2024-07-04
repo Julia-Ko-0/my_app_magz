@@ -6,11 +6,13 @@ import { useState } from "react"
 
   
     
-function CrHeder(){
+function CrHeder(props){
+   
     const [NewMas,SetCount]=useState(Mas)
     const [inp2Value,setInp2]=useState('')
 
-    let name='Julia'
+   
+    // console.log(name)
     function Poisk(){
         let impPoisk = document.getElementById('impPoisk')
         impPoisk.addEventListener('keydown',(ev)=>{
@@ -21,6 +23,7 @@ function CrHeder(){
         if('' != impPoisk.value){
             let NewChat = NewMas.filter(a=> a.name.includes(impPoisk.value))
         SetCount(NewChat)
+        
      
             // console.log(Mas)
             
@@ -105,7 +108,7 @@ function CrHeder(){
     <div class='div_inf_polz' id='div_inf_polz'>
         <div class='div_inf_polz2'>
         <img src="./imgs/2023-10-30_11-08-47.png" alt="" />
-        <h3>{name}</h3>
+        <h3>{props.name}</h3>
         </div>
  
          <div class='div_inf_polz3'>

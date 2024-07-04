@@ -2,8 +2,9 @@
  import { useState } from "react"
 import a from './reg.module.css'
 import { render } from '@testing-library/react'
+import { Navigate } from 'react-router-dom'
 let polz=[]
- function CrRegistr(){
+ function CrRegistr(props){
     // let heder = document.getElementById('heder')
     // heder.style.display='none'
     const [inp1Value,setInp]=useState('')
@@ -45,22 +46,27 @@ let polz=[]
         </div>
        
         <div>
-            <NavLink to={link}>
+            <Link to={link}>
             <button onClick={()=>{
                 
                 console.log(inp1Value!="" && inp2Value!=="" && inp3Value!=="" && inp4Value!=="" && inp5Value!=="" && inp6Value!=='')
                 if(inp1Value!=""&&inp2Value!==""&&inp3Value!==""&&inp4Value!==""&&inp5Value!==""&&inp6Value){
-                    {SaveUser(inp1Value,inp2Value,inp3Value,inp4Value,inp5Value,inp6Value)}
                     setL('/Главная')
+                    props.fun(inp1Value)
+
+                    {SaveUser(inp1Value,inp2Value,inp3Value,inp4Value,inp5Value,inp6Value)}
+                //    <Navigate to={link}/>
                     console.log(link)
                 }
                 else{
                     alert("Заполните все поля!")
+                    setL('/')
                 }
                 
             }} class={a.btn_otpr}>Отправить<svg xmlns="http://www.w3.org/2000/svg" width="26" height="4" viewBox="0 0 26 4" fill="none">
             <path d="M25.1768 2.17678C25.2744 2.07915 25.2744 1.92085 25.1768 1.82322L23.5858 0.232233C23.4882 0.134602 23.3299 0.134602 23.2322 0.232233C23.1346 0.329864 23.1346 0.488155 23.2322 0.585786L24.6464 2L23.2322 3.41421C23.1346 3.51184 23.1346 3.67014 23.2322 3.76777C23.3299 3.8654 23.4882 3.8654 23.5858 3.76777L25.1768 2.17678ZM0 2.25H25V1.75H0V2.25Z" fill="#FFFDF5"/>
-            </svg></button></NavLink>
+            </svg></button>
+            </Link>
             <NavLink to='/Вход'>
                 <button class={a.btn_vhod}>Войти в кабинет</button></NavLink>
             </div>
