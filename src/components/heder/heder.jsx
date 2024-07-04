@@ -64,7 +64,7 @@ function CrHeder(props){
     }
     return(
         
-<div id='heder' class={a.heder} >
+<div id='heder' class={`${a.heder} ${isOpen  ? "active" : ""}`}>
     <NavLink to='/Поиск' id='poisk'>
     <svg id='svg'class={a.svg_}xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
         <path d="M32 29H4C3.73478 29 3.48043 28.8946 3.29289 28.7071C3.10536 28.5196 3 28.2652 3 28C3 27.7348 3.10536 27.4804 3.29289 27.2929C3.48043 27.1054 3.73478 27 4 27H32C32.2652 27 32.5196 27.1054 32.7071 27.2929C32.8946 27.4804 33 27.7348 33 28C33 28.2652 32.8946 28.5196 32.7071 28.7071C32.5196 28.8946 32.2652 29 32 29Z" fill="#121212"/>

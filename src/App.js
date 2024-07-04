@@ -16,6 +16,8 @@ function App() {
   let polz_dan = JSON.parse(localStorage.getItem('user'))
   let name_=polz_dan[0].ФИО
   const [newName,SetCount]=useState('')
+  const [isOpen, setOpen] = useState(false)
+
 
   return (
 
@@ -23,10 +25,10 @@ function App() {
     <BrowserRouter>
     
         <div class='div'>
-          <CrHeder name={newName}/>
+          <CrHeder name={newName} cond={isOpen} chCon={setOpen}/>
         
           <Routes>
-          <Route path='/' element={<CrRegistr fun={SetCount}/>}/>
+          <Route path='/' setOpen_={setOpen} isOpen_={isOpen} element={<CrRegistr fun={SetCount}/>}/>
           <Route path='/Вход' element={<CrExt/>}/>
           {/* <Route path='/Главная/*' element={<CrHeder/>}/> */}
             <Route path='/Главная' element={<CrMain/>}/>

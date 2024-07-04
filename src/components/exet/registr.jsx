@@ -53,6 +53,7 @@ let polz=[]
                 if(inp1Value!=""&&inp2Value!==""&&inp3Value!==""&&inp4Value!==""&&inp5Value!==""&&inp6Value){
                     setL('/Главная')
                     props.fun(inp1Value)
+                    props.setOpen_(!props.isOpen_)
 
                     {SaveUser(inp1Value,inp2Value,inp3Value,inp4Value,inp5Value,inp6Value)}
                 //    <Navigate to={link}/>

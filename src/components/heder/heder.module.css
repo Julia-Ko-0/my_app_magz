@@ -4,7 +4,11 @@
     padding-top: 2%;
     padding-bottom: 2%;
     margin-left: 7%;
+    visibility: hidden;
 
+}
+.heder.active{
+    visibility: visible;
 }
 .svg_{
     width: 5%;
