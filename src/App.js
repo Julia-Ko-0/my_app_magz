@@ -25,10 +25,10 @@ function App() {
     <BrowserRouter>
     
         <div class='div'>
-          <CrHeder name={newName} cond={isOpen} chCon={setOpen}/>
+          <CrHeder name={newName} isOpen_={isOpen} setOpen_={setOpen} />
         
           <Routes>
-          <Route path='/' setOpen_={setOpen} isOpen_={isOpen} element={<CrRegistr fun={SetCount}/>}/>
+          <Route path='/'  element={<CrRegistr fun={SetCount} setOpen_={setOpen} isOpen_={isOpen}/>}/>
           <Route path='/Вход' element={<CrExt/>}/>
           {/* <Route path='/Главная/*' element={<CrHeder/>}/> */}
             <Route path='/Главная' element={<CrMain/>}/>

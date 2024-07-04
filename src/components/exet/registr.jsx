@@ -13,12 +13,16 @@ let polz=[]
     const [inp4Value,setInp4]=useState('')
     const [inp5Value,setInp5]=useState('')
     const [inp6Value,setInp6]=useState('')
-    const [link,setL]=useState('/')
+    // const [link,setL]=useState('/')
+    const [shouldNavigate, setShouldNavigate] = useState(false)
     function SaveUser(i1,i2,i3,i4,i5,i6){
        
         polz.push ({ФИО:i1,pas:i3,tel:i2,adr:i4,elpoch:i5,coment:i6})
     localStorage.setItem("user", JSON.stringify(polz))
         
+    }
+    if (shouldNavigate) {
+        return <Navigate to="/Главная" />;
     }
  
     return(
@@ -46,28 +50,26 @@ let polz=[]
         </div>
        
         <div>
-            <Link to={link}>
+            
             <button onClick={()=>{
                 
                 console.log(inp1Value!="" && inp2Value!=="" && inp3Value!=="" && inp4Value!=="" && inp5Value!=="" && inp6Value!=='')
                 if(inp1Value!=""&&inp2Value!==""&&inp3Value!==""&&inp4Value!==""&&inp5Value!==""&&inp6Value){
-                    setL('/Главная')
                     props.fun(inp1Value)
                     props.setOpen_(!props.isOpen_)
 
                     {SaveUser(inp1Value,inp2Value,inp3Value,inp4Value,inp5Value,inp6Value)}
                 //    <Navigate to={link}/>
-                    console.log(link)
+                    
+                    setShouldNavigate(true)
                 }
                 else{
                     alert("Заполните все поля!")
-                    setL('/')
                 }
                 
             }} class={a.btn_otpr}>Отправить<svg xmlns="http://www.w3.org/2000/svg" width="26" height="4" viewBox="0 0 26 4" fill="none">
             <path d="M25.1768 2.17678C25.2744 2.07915 25.2744 1.92085 25.1768 1.82322L23.5858 0.232233C23.4882 0.134602 23.3299 0.134602 23.2322 0.232233C23.1346 0.329864 23.1346 0.488155 23.2322 0.585786L24.6464 2L23.2322 3.41421C23.1346 3.51184 23.1346 3.67014 23.2322 3.76777C23.3299 3.8654 23.4882 3.8654 23.5858 3.76777L25.1768 2.17678ZM0 2.25H25V1.75H0V2.25Z" fill="#FFFDF5"/>
             </svg></button>
-            </Link>
             <NavLink to='/Вход'>
                 <button class={a.btn_vhod}>Войти в кабинет</button></NavLink>
             </div>
