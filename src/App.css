@@ -7,21 +7,7 @@ font-family: Roboto;
 }
 
  
-.div_inf_polz{
-    display: none;
-    background-color: #FFFDF5;
-    box-shadow: 0px 0px 5px #dddcd9;
-    width: 12%;
-    height: auto;
-    position: absolute;
-    right: 20%;
-    top: 20%;
-    visibility: hidden;
 
-}
-.div_inf_polz.active{
-    visibility: visible;
-}
 .div_inf_polz a{
     font-family: Roboto;
     text-decoration: none;
@@ -50,6 +36,21 @@ font-family: Roboto;
     line-height: 5%;
     margin-left: auto;
     margin-right: auto;
+}
+.div_inf_polz{
+    display: grid;
+    background-color: #FFFDF5;
+    box-shadow: 0px 0px 5px #dddcd9;
+    width: 12%;
+    height: auto;
+    position: absolute;
+    right: 20%;
+    top: 20%;
+    visibility: hidden;
+
+}
+.div_inf_polz.active{
+    visibility: visible;
 }
 .polos{
     background-color: #7D7D7D;
